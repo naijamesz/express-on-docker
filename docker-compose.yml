@@ -1,0 +1,6 @@
+version: '3' # define docker-compose version
+services: # services is a keyword
+  node-server: # set container name(can be use --name in )
+    build: . # ตำแหน่ง dockerfile
+    ports:
+      - "8000:8000" # map port ออกมา เหมือน -p ใน docker run 
